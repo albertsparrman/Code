@@ -23,6 +23,11 @@ html, body, h1, h2, h3, h4, h5, p, a, button {
     background-color: var(--color-dark);
     border-radius: 6px;
     border: none;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+.slider-button:active { 
+    transform: scale(0.9);
 }
 
 .slider-games {
@@ -36,6 +41,7 @@ html, body, h1, h2, h3, h4, h5, p, a, button {
     scrollbar-width: none; 
     scroll-snap-type: x mandatory;
     gap: 10px;
+    cursor: grab
 }
 
 .slider-games::-webkit-scrollbar {
@@ -45,21 +51,88 @@ html, body, h1, h2, h3, h4, h5, p, a, button {
 .slider-games > article {
     user-select: none;
     border-radius: 6px;
-    background-color: transparent;
+    overflow: hidden;
     min-width: 300px;
     height: 100%;
     scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
     background-color: var(--color-dark);
     color: var(--color-light);
 }
 
-.slider-games > article > section {
+.slider-games > article > section:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+    gap: 2px;
+}
+
+.slider-games > article > section > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.slider-games > article > section > div > div {
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: red;
+    animation: live 2s infinite linear;
+}
+
+@keyframes live {
+    0% {opacity: 0.1;}
+    50% {opacity: 1;}
+    100% {opacity: 0.1;}
+}
+
+
+.slider-games > article > section > section{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5px;
 }
 
-.slider-games > article > section > img {
+.slider-games > article > section > section > img {
     width: 40px;
+}
+
+.slider-games > article > section > section > p {
+    font-size: 25px;
+}
+
+.slider-games > article > section > div > p {
+    font-size: 13px;
+}
+
+.slider-games > article > section > p:nth-child(3) {
+    font-size: 10px;
+}
+
+.slider-games > article > section:nth-child(2) {
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1px;
+    flex-direction: row;
+    background-color: rgb(132, 27, 34);
+   
+}
+
+.slider-games > article > section > a {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    background-color: rgb(177, 25, 38);
 }
