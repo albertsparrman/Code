@@ -1,0 +1,92 @@
+{
+    "games": [
+        {
+            "home": {
+                "team": "Bulls",
+                "logo": "/teamLogos/bulls-svg.svg",
+                "score": 12
+            }, 
+            "away": {
+                "team": "Celtics", 
+                "logo": "/teamLogos/BOS.svg",
+                "score": 23
+            },
+            
+            "arena": "United Center",
+            "game-date": "2024-02-01 20:30",
+            "status": "live"
+        },
+        {
+            "home": {
+                "team": "Nuggets",
+                "score": 0
+            }, 
+            "away": {
+                "team": "Bulls", 
+                "score": 0
+            },
+            
+            "status": "live"
+        },
+        {
+            "home": {
+                "team": "Bulls",
+                "score": 0
+            }, 
+            "away": {
+                "team": "Knicks", 
+                "score": 0
+            },
+            
+            "status": "live"
+        },
+        {
+            "home": {
+                "team": "Celtics",
+                "score": 12
+            }, 
+            "away": {
+                "team": "Buls", 
+                "score": 23
+            },
+            
+            "status": "live"
+        },
+        {
+            "home": {
+                "team": "Bulls",
+                "score": 12
+            }, 
+            "away": {
+                "team": "Celtics", 
+                "score": 23
+            },
+            
+            "status": "live"
+        },
+        {
+            "home": {
+                "team": "Bulls",
+                "score": 12
+            }, 
+            "away": {
+                "team": "Celtics", 
+                "score": 23
+            },
+            
+            "status": "live"
+        },
+        {
+            "home": {
+                "team": "Bulls",
+                "score": 12
+            }, 
+            "away": {
+                "team": "Celtics", 
+                "score": 23
+            },
+            
+            "status": "live"
+        }
+    ]
+}

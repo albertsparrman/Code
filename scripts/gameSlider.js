@@ -35,6 +35,7 @@ slider.addEventListener('mouseup', () => {
   isDown = false;
   slider.classList.remove('active');
   beginMomentumTracking();
+  
   slider.style.scrollSnapType = "x mandatory"
 });
 
@@ -43,7 +44,8 @@ slider.addEventListener('mousemove', (e) => {
   if(!isDown) return;
   e.preventDefault();
   const x = e.pageX - slider.offsetLeft;
-  const walk = (x - startX) * 1.5; //scroll-fast
+  const walk = (x - startX) * 1.5;
+  console.log(slider.offsetLeft);
   var prevScrollLeft = slider.scrollLeft;
   slider.scrollLeft = scrollLeft - walk;
   velX = slider.scrollLeft - prevScrollLeft;
@@ -51,7 +53,6 @@ slider.addEventListener('mousemove', (e) => {
 
 
 
-// Momentum 
 
 var velX = 0;
 var momentumID;
